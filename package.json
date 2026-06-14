@@ -1,0 +1,30 @@
+{
+  "name": "copy-of-finance-tracker-but-free",
+  "version": "1.0.0",
+  "description": "Aku buat projek ini karena sial lah, orang orang dikit dikit premium, sedikit sedikit berbayar, sedikit sedikit pakai langganan, so here's my fully free project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaggigit/Free-Finance-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agaggigit/Free-Finance-Tracker/issues"
+  },
+  "homepage": "https://github.com/agaggigit/Free-Finance-Tracker#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

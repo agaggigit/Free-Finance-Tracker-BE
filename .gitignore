@@ -1,0 +1,18 @@
+# Kredensial dan rahasia
+.env
+
+# Modul Node.js (Library yang diunduh NPM)
+node_modules/
+
+# File log dari NPM jika terjadi error
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mac OS folder bawaan (Jika menggunakan Mac)
+.DS_Store
+
+# Folder build/distribusi (Nantinya jika aplikasi dibuild)
+dist/
+build/

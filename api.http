@@ -1,0 +1,42 @@
+### Membuat Account Baru (Create Account)
+POST http://localhost:3000/api/accounts
+Content-Type: application/json
+
+{
+  "user_id": "123e4567-e89b-12d3-a456-426614174000",
+  "account_name": "Dompet Tunai Utama",
+  "account_type": "CASH",
+  "account_base_currency": "IDR",
+  "account_description": "Uang fisik untuk pegangan sehari-hari"
+}
+
+### Mengambil Daftar Dompet (Get Accounts)
+GET http://localhost:3000/api/accounts
+
+### Mencatat Pengeluaran (Create Transaction)
+POST http://localhost:3000/api/transactions
+Content-Type: application/json
+
+{
+  "transaction_book_id": "b0a752dd-def2-4e1e-8835-846f6573901a",
+  "transaction_category_id": "eace1942-64ab-422b-8dd0-70c9ec073894",
+  "transaction_account_id": "577d89b1-1831-47ad-bcd1-0ced3a5b2213",
+  "transaction_amount": "50000.0000",
+  "transaction_currency": "IDR",
+  "transaction_description": "Beli kopi susu",
+  "transaction_type": "EXPENSE"
+}
+
+### Mengambil Riwayat Transaksi (Get Transactions)
+GET http://localhost:3000/api/transactions
+
+### Membuat Kategori Baru
+POST http://localhost:3000/api/categories
+Content-Type: application/json
+
+{
+  "user_id": "123e4567-e89b-12d3-a456-426614174000",
+  "category_name": "Transportasi",
+  "category_type": "EXPENSE",
+  "category_description": "Biaya ojek dan KRL"
+}
